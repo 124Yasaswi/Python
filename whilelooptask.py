@@ -34,6 +34,45 @@ while ch<=ord("Z"):
     ch=ch+1
     print()
     
+#sum of prime numbers in a number
+
+num=int(input("enter a number:"))
+sum=0
+while num>0:
+    digit=num%10
+    num=num//10
+    if digit==2 or digit==3 or digit==5 or digit==7:
+        sum=sum+digit
+print("sum of prime digits is",sum)
+
+#automorphic number
+
+num = int(input("Enter a number: ")
+square = num * num
+temp = num
+count = 0
+while temp > 0:
+    count += 1
+    temp //= 10
+last_digits = square % (10 ** count)
+if last_digits == num:
+    print(num, "is an Automorphic number")
+else:
+    print(num, "is NOT an Automorphic number")
+    
+#smallest number
+
+num=int(input("enter a number:"))
+smallest=9
+while num>0:
+    digit=num%10
+    if digit<smallest:
+        smallest=digit
+    num=num//10
+print("smallest digit is",smallest)
+
     
     
     
+    
+
